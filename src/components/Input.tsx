@@ -15,7 +15,7 @@ const Input = ({
         name={name}
         onChange={(e) => {
           onChangeHandler(e);
-          validateForm(name);
+          // validateForm(name);
         }}
         onKeyUp={() => validateForm(name)}
         onBlur={() => validateForm(name)}

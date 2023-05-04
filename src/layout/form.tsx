@@ -77,6 +77,8 @@ function Form() {
   const handleError = () => {
     const errArray = Object.values(Errors).map((item) => item === '');
     const formArray = Object.values(FormMain).map((item) => item !== '');
+    
+    
     setIsvalid((prev) => {
       if (
         errArray.every((item) => item === true) &&
