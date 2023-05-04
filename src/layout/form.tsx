@@ -92,8 +92,15 @@ function Form() {
     event.preventDefault();
     handleError();
     if (isValid) {
-      console.log('Form Data:', FormMain);
-      alert('Your login is complete!');
+      console.log('SugnUpForm:', FormMain);
+      FormMain.email = '';
+      FormMain.password = '';
+      FormMain.repeatPass = '';
+      FormMain.username = '';
+      setFormMain({ ...FormMain });
+      setTimeout(() => {
+        alert('Your login is complete!');
+      }, 10);
     } else {
       validateForm('email');
       setTimeout(() => {
