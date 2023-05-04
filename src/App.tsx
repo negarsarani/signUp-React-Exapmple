@@ -1,13 +1,12 @@
-import { useState } from 'react'
-
-import './App.css'
+import Form from './layout/form';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-   
-  )
+    <div className="w-full h-[100vh] flex flex-col justify-center items-center">
+      <Form />
+    </div>
+  );
 }
 
-export default App
+export default App;
